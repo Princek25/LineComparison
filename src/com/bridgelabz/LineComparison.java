@@ -41,10 +41,22 @@ public class LineComparison {
             System.out.println("Lines are not equal");
         }
     }
+    public static void compareByCompareTo(){
+        Double a = length1;
+        Double b = length2;
+        if (a.compareTo(b) == 0){
+            System.out.println("Line1 is equal to Line2");
+        } else if (a.compareTo(b) == 1) {
+            System.out.println("Line1 is greater than Line2");
+        }else {
+            System.out.println("Line1 is less than Line2");
+        }
+    }
 
     public static void main(String[] args) {
         System.out.println("Welcome to Line Comparison Computation Program on Main Branch");
         calculatingLength();
         checkingEqualLines();
+        compareByCompareTo();
     }
 }
